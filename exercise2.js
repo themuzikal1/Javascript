@@ -14,23 +14,29 @@ while (i < 10) {
 }
 */
 
-
-
-
-
 /************************************************************* */
 // Problem 2:
 // multiply the sum of 30 added to two by 20.  Divide the product by 10 raised to the power of 2
 //use javascript to compute the value of the above statement. Each individual operation needs to be a function expression. run all the functions after defining them, and print the answer to the console.
 
-/*function sumOf30(n) {
-  var sum = 0;
-    for (i = 0; i <= 30; i++) {
-        sum += i;
-    }
-    console.log(sumOf30);
+/* Commenting out problem 2
+function add() {
+    const x = 30;
+    const y = 2;
+    const z = 20;
+    const sum = x + y;
+        console.log(sum);//outputs the sum of 30 and 2.  Expected output is 32
+
+    const product = (sum * z);
+        console.log(product); //ouputs the product of 32 and 20.  Expected output is 640.
+    const divide = (product / (10 * 10));
+    console.log(divide);
+
 }
+
+add();
 */
+
 
 
 /************************************************************* */

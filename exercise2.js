@@ -185,18 +185,24 @@ computer.nameOfComputer();
 /************************************************************* */
 //Problem 7: create a function that outputs your 3 favorite data types, with a message explaining why you like that data type.
 
-function favDataTypes() {
-    const dataType1 = 'strings';
-    const dataType2 = 'objects';
-    const dataType3 = 'numbers';
-
-console.log('I like ' + dataType1 + ' because they allow me to type messages such as this one');
-
-console.log('I like ' + dataType2 + ' because I can use them to create video games like SimCity');
-
-console.log('I like ' + dataType3 + ' because what is the world without numbers?');
+/*********************** Commenting out Problem 7
+const dataType1 = 'strings';
+const dataType2 = 'objects';
+const dataType3 = 'numbers';
+function favDataTypes1(dataType1) {
+    console.log('I like ' + dataType1 + ' because they allow me to type messages //such as this one');
 }
+function favDataTypes2(dataType2) {
+    console.log('I like ' + dataType2 + ' because I can use them to create video games like SimCity'); 
+}  
+function favDataTypes3(dataType3) {
+    console.log( 'I like ' + dataType3 + ' because what is the world without numbers?');
+};
 
+favDataTypes1(dataType1);
+favDataTypes2(dataType2);
+favDataTypes3(dataType3);
+*/
 
 
 /************************************************************* */

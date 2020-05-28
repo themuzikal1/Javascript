@@ -52,7 +52,7 @@ console.log(res.join());
 /************************************************************* */
 // Problem 4:
 // Write a JavaScript function with a function that reverses your telephone number. Use the split() and join() methods from the previous problem as well as the toString() method to convert a number into a string and reverse() method to reverse an array in place.
-
+/********* Commenting out this solution 
 let phoneNum = "2146794777";
 console.log(phoneNum);
 let num = phoneNum.split("");
@@ -63,7 +63,7 @@ let n = num.toString();
 console.log(num.toString());
 num.reverse(); 
 console.log (num);
-
+*/
 
 /************************************************************* */
 // Problem 5:
@@ -123,36 +123,34 @@ for (i=0; i < nums.length; i += 3) {
     console.log(i);
 }
  */   
- /*************************************************************  
+   
 
 
 
 // Problem 9:
 const foodArray = [ 'potatoes', 'tamales', 'lemon','strawberries','chocolate', 'pudding', {school : 'TEKcamp'} ];
 
-
 //access the value of the last element of the array and set it to a variable called school.  print the school variable to the console.
 
-//const obj = {school: 'TEKcamp'};
+    const obj = {school: 'TEKcamp'};
     const str = 'school';
-    console.log(str);
+    //console.log(str);
+    foodArray.pop();
+    foodArray.push('school');
 
 const adjectiveArray = [ 'salty', 'spicy', 'sour', 'sweet', 'rich','creamy','amazing'];
 // Using both the foodArray and the adjectiveArray, make a
 // "for" loop that console.log()'s a sentence for each
 // corresponding value in the arrays. Add the word "is" or "are" depending on if the food is singular or plural.  "Potatoes are salty", "Lemon is sour".
-foodArray.pop();
-foodArray.push('school');
-
+//console.log(foodArray);
 foodArray.forEach((num1, index)=> {
     const num2 = adjectiveArray[index];
-
     console.log(num1 + ' are ' + num2);
     console.log(num1 + ' is ' + num2);
 
 
 });
-*/
+
 
 
 

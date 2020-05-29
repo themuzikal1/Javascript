@@ -59,9 +59,9 @@ console.log(array1.map(x => x > 3)) ;
 // Problem 5:
 // Now declare another array of numbers that has any 5 numbers. Write a JavaScript program that returns the sum of those numbers. Use an arrow function and one of the built-in array methods. 
 /* commenting out problem 5
-const array1 = [1, 2, 3, 4, 5];
-const reducer = (accumulator, currentValue) => accumulator + currentValue;
-console.log(array1.reduce(reducer));
+const array1 = [1, 2, 3, 4, 5]; //declared array
+const reducer = (accumulator, currentValue) => accumulator + currentValue; //function that returns sum of numbers in array
+console.log(array1.reduce(reducer));  //outputs the sum
 */
 
 
@@ -71,37 +71,46 @@ console.log(array1.reduce(reducer));
 
 // Write a function that takes in a DNA string as a parameter and returns an array with the complementary strand. For example, a string of "GCTA" would return an array of ["C", "G", "A", "T"].  
 
-    
-//const string = 'GCTA';
-//console.log(Array.from(string));
+/* commenting out problem 8    
+const string = 'GCTA';
+console.log(Array.from(string)); //takes a string and creates an array
 
+let myData = Array.from(string)
+function swap(input, index_A, index_B) { //function that swaps G and C from the array created above
+    let temp = input[index_A];
 
+    input[index_A] = input[index_B];
+    input[index_B] = temp;
+}
 
-
+swap(myData, 0, 1);  //invokes swap function
+console.log(myData); //outputs the array with the swapped letters.
+*/
 
 
 /************************************************************* */
 // Problem 7:
 
 // 7.a - Write a function to find the maximum numerical value of the given array.  Get rid of any non numerical values.  Convert the strings that are numbers to an actual number data type.  ("one" => 1) ("1" => 1).  Use array methods to perform this task.  
-/*
+/*commenting out problem 7a 
 const numbers = [2,23,1,2,1,1,1,2,2.5,20,200,2000,,{k:1},20000,19999,1878,140,23,4,"sk",true,true,"true-dat","nice","one","two","three","3","tea",[]];
 
-   function maxNumber(numbers) {
-    
-} 
+const truthys = numbers.filter(el => el);
+const primitives = truthys.filter(n => typeof n != 'object');
+const noBools = primitives.filter(p => typeof p != 'boolean');
+const numStrings = ["zero", "one", "two", "three"];
+const numWithStrings = noBools.map(nb => numStrings.includes(nb) ? numStrings.indexOf(nb) : nb);
 
+const nums = numWithStrings.filter(n => typeof n != 'string');
+console.log(nums);
 
-//numbers = numbers.replace(/\D/g,'');
-//console.log(numbers);
-
-
+console.log(Math.max(...nums));
+*/
 
 // 7.b -Write a function that sorts the given numbers array.  Allow the function to sort the array in descending order
-
-//function sortNums(numbers,desc=false) {
-    //your code...
-//};
+/* commenting out problem 7b
+console.log(nums.sort(function(a, b) {return b-a}));
+*/
 
 
 /************************************************************* */
